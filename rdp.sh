@@ -42,19 +42,16 @@ echo "Installing Google Chrome"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
-apt install python3-tk
-pip install pynput
-pip install pystray
-apt install python3-gi gir1.2-gtk-3.0
-apt install gir1.2-appindicator3-0.1 libappindicator3-dev
-apt install at-spi2-core libatk-bridge2.0-0
-git clone https://github.com/LOUDO56/PyMacroRecord.git
-cp -r PyMacroRecord/ /home/user/Desktop/
-pip install -r /content/PyMacroRecord/requirements.txt
-chmod +x /content/PyMacroRecord/src/main.py
-
-
-
+git clone https://github.com/LOUDO56/PyMacroRecord.git 
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py 
+chmod +x * && python3 get-pip.py 
+apt install python3-tk 
+apt install python3-gi gir1.2-gtk-3.0 
+sudo apt install gir1.2-appindicator3-0.1 libappindicator3-dev 
+sudo apt install python3-dev 
+pip install pynput 
+pip install pystray 
+sudo mkdir -p /root/.config/PyMacroRecord
 
 
 # Prompt user for CRP value
